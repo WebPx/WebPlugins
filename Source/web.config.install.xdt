@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections xdt:Transform="InsertBefore(/configuration/*[1])">
+  </configSections>
+  <configSections xdt:Locator="XPath(/configuration/configSections[last()])">
+    <sectionGroup name="webpx" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing">
+      <section name="web" type="WebPx.Web.Configuration.WebSection, WebPx.Web.Plugins, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cef91311a48ec8b" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+      <section name="network" type="WebPx.Network.Configuration.NetworkSection, WebPx.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cef91311a48ec8b" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+    </sectionGroup>
+  </configSections>
+  <configSections xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)" />
+  <webpx xdt:Transform="InsertIfMissing">
+    <web autoInit="true">
+      <iconSets>
+      </iconSets>
+      <scripts>
+        <!--<add name="jquery" path="~/assets/global/plugins/jquery.min.js" cdnPath="https://code.jquery.com/jquery-1.12.4.js" />-->
+      </scripts>
+      <styleSheets>
+        <!--<add name="bootstrap" path="~/assets/global/plugins/bootstrap/css/bootstrap.min.css" />-->
+      </styleSheets>
+      <pages>
+        <page name="Home" path="~/" />
+      </pages>
+    </web>
+  </webpx>
+</configuration>

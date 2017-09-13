@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48F68B98-95EA-40BD-9283-AFFCA305DAE1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPx</RootNamespace>
+    <AssemblyName>WebPx.Web.Plugins</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\WebPx.Web.Plugins.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Microsoft\VS10\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Microsoft\VS10\Microsoft.VisualStudio.Shell.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Microsoft\VS10\Microsoft.VisualStudio.Shell.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArgumentValidation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\ClientEvent.cs" />
+    <Compile Include="Web\ConfigurationResourceProvider.cs" />
+    <Compile Include="Web\ConfigurationSettingsProvider.cs" />
+    <Compile Include="Web\Configuration\ConfigElementCollection.cs" />
+    <Compile Include="Web\Configuration\IconSet.cs" />
+    <Compile Include="Web\Configuration\IconSetCollection.cs" />
+    <Compile Include="Web\Configuration\INamedConfigElement.cs" />
+    <Compile Include="Web\Configuration\NamedConfigElement.cs" />
+    <Compile Include="Web\Configuration\ResourceProvider.cs" />
+    <Compile Include="Web\Configuration\ResourceProviderCollection.cs" />
+    <Compile Include="Web\Configuration\Script.cs" />
+    <Compile Include="Web\Configuration\ScriptCollection.cs" />
+    <Compile Include="Web\Configuration\SitePage.cs" />
+    <Compile Include="Web\Configuration\SitePageCollection.cs" />
+    <Compile Include="Web\Configuration\StyleSheet.cs" />
+    <Compile Include="Web\Configuration\StyleSheetCollection.cs" />
+    <Compile Include="Web\Configuration\WebSection.cs" />
+    <Compile Include="Web\Design\IconCssClassEditor.cs" />
+    <Compile Include="Web\Design\IconCssClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\Design\IconCssClassForm.Designer.cs">
+      <DependentUpon>IconCssClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Icons\Category.cs" />
+    <Compile Include="Web\Icons\CategoryCollection.cs" />
+    <Compile Include="Web\Icons\CategoryFile.cs" />
+    <Compile Include="Web\Icons\Icon.cs" />
+    <Compile Include="Web\Icons\IconCollection.cs" />
+    <Compile Include="Web\IconAlignment.cs" />
+    <Compile Include="Web\IControlClientEvents.cs" />
+    <Compile Include="Web\IPageActions.cs" />
+    <Compile Include="Web\IUserProfile.cs" />
+    <Compile Include="Web\PageAction.cs" />
+    <Compile Include="Web\PageActionSet.cs" />
+    <Compile Include="Web\Pages.cs" />
+    <Compile Include="Web\Picture.cs" />
+    <Compile Include="Web\PictureHandler.cs" />
+    <Compile Include="Web\PictureProvider.cs" />
+    <Compile Include="Web\Plugins\ControlMode.cs" />
+    <Compile Include="Web\Plugins\Design\ConfigurationDependency.cs" />
+    <Compile Include="Web\Plugins\Design\ConfigurationRequest.cs" />
+    <Compile Include="Web\Plugins\Design\DesignerExtensions.cs" />
+    <Compile Include="Web\Plugins\Design\DesignScope.cs" />
+    <Compile Include="Web\Plugins\Design\DesignTimeResourceProvider.cs" />
+    <Compile Include="Web\Plugins\Design\IConfiguration.cs" />
+    <Compile Include="Web\Plugins\Design\StyleSheetManagerDesigner.cs" />
+    <Compile Include="Web\Plugins\Design\VsHelper.cs" />
+    <Compile Include="Web\Plugins\IDesignSupport.cs" />
+    <Compile Include="Web\Plugins\IJQueryControl.cs" />
+    <Compile Include="Web\Plugins\JQueryControl.cs" />
+    <Compile Include="Web\Plugins\JQueryDataBoundControl.cs" />
+    <Compile Include="Web\Plugins\JQueryHierarchicalDataBoundControl.cs" />
+    <Compile Include="Web\Plugins\jQueryScriptDescriptor.cs" />
+    <Compile Include="Web\Plugins\SmartControl.cs" />
+    <Compile Include="Web\Plugins\StyleSheetContext.cs" />
+    <Compile Include="Web\Plugins\StyleSheetManager.cs" />
+    <Compile Include="Web\Plugins\StyleSheetReference.cs" />
+    <Compile Include="Web\Plugins\StyleSheetReferenceCollection.cs" />
+    <Compile Include="Web\Plugins\StyleSheetReferenceException.cs" />
+    <Compile Include="Web\ResourceProvider.cs" />
+    <Compile Include="Web\ScriptDefinition.cs" />
+    <Compile Include="Web\Setting.cs" />
+    <Compile Include="Web\Settings.cs" />
+    <Compile Include="Web\SettingsProvider.cs" />
+    <Compile Include="Web\Site.cs" />
+    <Compile Include="Web\SettingsExpressionBuilder.cs" />
+    <Compile Include="Web\SiteExpressionBuilder.cs" />
+    <Compile Include="Web\SiteInformation.cs" />
+    <Compile Include="Web\SitePage.cs" />
+    <Compile Include="Web\StyleSheetDefinition.cs" />
+    <Compile Include="Web\StyleSheetDefinitionCollection.cs" />
+    <Compile Include="Web\Theme.cs" />
+    <Compile Include="Web\Themes.cs" />
+    <Compile Include="Web\UserProfile.cs" />
+    <Compile Include="Web\UserProfileExpressionBuilder.cs" />
+    <Compile Include="Web\UserProfileProvider.cs" />
+    <Compile Include="Web\UserProfileProviderTest.cs" />
+    <Compile Include="Web\WebResourceManagement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Plugins.nuspec" />
+    <None Include="web.config.install.xdt" />
+    <None Include="web.config.uninstall.xdt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\WebPx.Network\WebPx.Network.csproj">
+      <Project>{9af4ee3e-92e0-4207-80a9-573a80122d78}</Project>
+      <Name>WebPx.Network</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebPx.Web\WebPx.Web.csproj">
+      <Project>{72f3c251-c236-407a-849a-f1062b49cff7}</Project>
+      <Name>WebPx.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Design\IconCssClassForm.resx">
+      <DependentUpon>IconCssClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\WebPackages\WebPx.Web.PdfViewer\packages\NuPack.3.4.2\build\NuPack.targets" Condition="Exists('..\..\..\WebPackages\WebPx.Web.PdfViewer\packages\NuPack.3.4.2\build\NuPack.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\WebPackages\WebPx.Web.PdfViewer\packages\NuPack.3.4.2\build\NuPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\WebPackages\WebPx.Web.PdfViewer\packages\NuPack.3.4.2\build\NuPack.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\NuPack.3.4.4\build\NuPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\NuPack.3.4.4\build\NuPack.targets'))" />
+  </Target>
+  <Import Project="..\..\..\packages\NuPack.3.4.4\build\NuPack.targets" Condition="Exists('..\..\..\packages\NuPack.3.4.4\build\NuPack.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

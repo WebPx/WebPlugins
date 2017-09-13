@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections>
+    <sectionGroup name="webpx">
+      <section name="web" type="WebPx.Web.Configuration.WebSection, WebPx.Web.Plugins, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cef91311a48ec8b" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+      <section name="network" type="WebPx.Network.Configuration.NetworkSection, WebPx.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cef91311a48ec8b" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+    </sectionGroup>
+    <sectionGroup xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)" />
+  </configSections>
+  <configSections xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)" />
+  <webpx xdt:Transform="Remove">
+  </webpx>
+</configuration>    
