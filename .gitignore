@@ -4,3 +4,6 @@
 
 *.sqlite
 *.suo
+source/packages/*
+source/obj/*
+.vs/*

@@ -1,31 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>WebPx.Web.Plugins</id>
-        <version>6.0.0.4</version>
-        <title>jQuery Controls Base by WebPx</title>
-        <authors>WebPx Technologies</authors>
-        <owners>WebPx Technologies</owners>
-        <licenseUrl>https://www.webpx.com/licensing/freeware-license</licenseUrl>
-        <projectUrl>https://docs.webpx.com</projectUrl>
-        <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <developmentDependency>true</developmentDependency>
-        <description>WebPx Web Plugins</description>
-        <summary>A set of clases that allows the development of server side rendered controls</summary>
-        <releaseNotes>Please refer to the online documentation for more details at
+  <metadata>
+    <id>WebPx.Web.Plugins</id>
+    <version>6.0.0.4</version>
+    <title>jQuery Controls Base by WebPx</title>
+    <authors>WebPx Technologies</authors>
+    <owners>WebPx Technologies</owners>
+    <licenseUrl>https://www.webpx.com/licensing/freeware-license</licenseUrl>
+    <projectUrl>https://docs.webpx.com</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <description>WebPx Web Plugins</description>
+    <summary>A set of clases that allows the development of server side rendered controls</summary>
+    <releaseNotes>
+      Please refer to the online documentation for more details at
 
-https://docs.webpx.com/jquery/6/</releaseNotes>
-        <copyright>Copyright © WebPx Technologies 2016</copyright>
-        <language>en-US</language>
-        <tags>WebPx, jQuery</tags>
-        <frameworkAssemblies>
-            <frameworkAssembly assemblyName="System.Web" targetFramework="" />
-            <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
-        </frameworkAssemblies>
-    </metadata>
-    <files>
-        <file src="content\web.config.install.xdt" target="content\web.config.install.xdt" />
-        <file src="content\web.config.uninstall.xdt" target="content\web.config.uninstall.xdt" />
-        <file src="lib\net40\WebPx.Web.Plugins.dll" target="lib\net40\WebPx.Web.Plugins.dll" />
-    </files>
+      https://docs.webpx.com/jquery/6/
+    </releaseNotes>
+    <copyright>Copyright © WebPx Technologies 2016</copyright>
+    <language>en-US</language>
+    <tags>WebPx, jQuery</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="web.config.install.xdt" target="content\web.config.install.xdt" />
+    <file src="web.config.uninstall.xdt" target="content\web.config.uninstall.xdt" />
+    <file src="bin\Debug\WebPx.Network.dll" target="lib\net40\WebPx.Network.dll" />
+    <file src="bin\Debug\WebPx.Web.dll" target="lib\net40\WebPx.Web.dll" />
+    <file src="bin\Debug\WebPx.Web.Plugins.dll" target="lib\net40\WebPx.Web.Plugins.dll" />
+  </files>
 </package>

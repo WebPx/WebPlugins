@@ -12,6 +12,10 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -39,11 +43,10 @@
     </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>WebPx6.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -86,6 +89,12 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebPx.Network, Version=6.0.0.13, Culture=neutral, PublicKeyToken=7cef91311a48ec8b, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\WebPx.Network.6.0.0.13\lib\net40\WebPx.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="WebPx.Web, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\WebPx.Web.6.0.0.0\lib\net40\WebPx.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArgumentValidation.cs" />
@@ -172,20 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Plugins.nuspec" />
+    <None Include="Plugins.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="web.config.install.xdt" />
     <None Include="web.config.uninstall.xdt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\WebPx.Network\WebPx.Network.csproj">
-      <Project>{9af4ee3e-92e0-4207-80a9-573a80122d78}</Project>
-      <Name>WebPx.Network</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WebPx.Web\WebPx.Web.csproj">
-      <Project>{72f3c251-c236-407a-849a-f1062b49cff7}</Project>
-      <Name>WebPx.Web</Name>
-    </ProjectReference>
+    <None Include="WebPx6.pfx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Web\Design\IconCssClassForm.resx">
